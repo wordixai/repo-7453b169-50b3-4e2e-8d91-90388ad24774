@@ -6,7 +6,7 @@ export const SponsorBanner = () => {
       href="https://www.siliconflow.com/?utm_source=mcp.so&utm_medium=referral&utm_campaign=202508&utm_id=000001&utm_term=web_banner&utm_content=v2" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="relative isolate flex items-center gap-x-6 overflow-hidden bg-[#1C1C1C] px-6 py-3 sm:px-3.5 sm:before:flex-1 border-b border-gray-800 cursor-pointer hover:bg-[#2C2C2C]"
+      className="relative isolate flex items-center gap-x-3 sm:gap-x-6 overflow-hidden bg-[#1C1C1C] px-3 sm:px-6 py-2 sm:py-3 sm:before:flex-1 border-b border-gray-800 cursor-pointer hover:bg-[#2C2C2C]"
     >
       <div className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
         <div 
@@ -17,18 +17,19 @@ export const SponsorBanner = () => {
         />
       </div>
       
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p className="text-sm leading-6 text-gray-200">
-          <span className="mx-1 rounded-md bg-[#6E29F6] px-2 py-1 font-bold text-white">SiliconFlow</span>
-          <span className="hidden md:inline text-sm">: Get GPT‑OSS, Deepseek R1&V3, Qwen3 up and running — fully MCP‑ready.</span>
-          <ArrowRight className="w-5 h-5 ml-2 inline-block bg-[#6E29F6] text-white rounded-full p-1" />
+      <div className="flex flex-wrap items-center gap-x-2 sm:gap-x-4 gap-y-2">
+        <p className="text-xs sm:text-sm leading-6 text-gray-200 flex items-center">
+          <span className="mx-1 rounded-md bg-[#6E29F6] px-1.5 sm:px-2 py-0.5 sm:py-1 font-bold text-white text-xs">SiliconFlow</span>
+          <span className="hidden md:inline text-xs sm:text-sm">: Get GPT‑OSS, Deepseek R1&V3, Qwen3 up and running — fully MCP‑ready.</span>
+          <span className="md:hidden text-xs">: GPT‑OSS, MCP‑ready</span>
+          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2 inline-block bg-[#6E29F6] text-white rounded-full p-1" />
         </p>
       </div>
       
       <div className="flex flex-1 justify-end">
-        <button type="button" className="-m-3 p-3 cursor-pointer focus-visible:outline-offset-4">
+        <button type="button" className="-m-2 sm:-m-3 p-2 sm:p-3 cursor-pointer focus-visible:outline-offset-4">
           <span className="sr-only">Dismiss</span>
-          <X className="h-5 w-5 text-gray-400 hover:text-gray-200" />
+          <X className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 hover:text-gray-200" />
         </button>
       </div>
     </a>

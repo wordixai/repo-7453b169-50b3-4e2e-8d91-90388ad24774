@@ -144,7 +144,7 @@ const Index = () => {
       <SidebarInset>
         <SponsorBanner />
         <Header />
-        <div className="flex-1 px-4 md:px-6 pb-16 pt-4">
+        <div className="flex-1 px-2 sm:px-4 md:px-6 pb-8 sm:pb-16 pt-2 sm:pt-4">
           <HeroSection />
           <SearchSection />
           <TabNavigation />
@@ -154,7 +154,7 @@ const Index = () => {
               {/* Featured MCP Servers */}
               <div>
                 <SectionHeader title="Featured MCP Servers" viewAllHref="/servers?tag=featured" />
-                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {featuredServers.map((server, index) => (
                     <ServerCard key={index} {...server} />
                   ))}
@@ -164,7 +164,7 @@ const Index = () => {
               {/* Featured MCP Clients */}
               <div>
                 <SectionHeader title="Featured MCP Clients" viewAllHref="/clients?tag=featured" />
-                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {featuredClients.map((client, index) => (
                     <ServerCard key={index} {...client} />
                   ))}
@@ -174,7 +174,7 @@ const Index = () => {
               {/* Latest MCP Servers */}
               <div>
                 <SectionHeader title="Latest MCP Servers" viewAllHref="/servers?tag=latest" />
-                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {latestServers.map((server, index) => (
                     <ServerCard key={index} {...server} />
                   ))}
@@ -192,7 +192,7 @@ const Index = () => {
               {/* Latest MCP Clients */}
               <div>
                 <SectionHeader title="Latest MCP Clients" viewAllHref="/clients?tag=latest" />
-                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {latestClients.map((client, index) => (
                     <ServerCard key={index} {...client} />
                   ))}

@@ -43,23 +43,23 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-16">
+    <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6">
       <div className="container">
         <div className="text-center">
-          <h2 className="mt-4 text-4xl font-semibold">FAQ</h2>
-          <p className="mt-6 font-medium text-muted-foreground">Frequently Asked Questions about MCP Server</p>
+          <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold">FAQ</h2>
+          <p className="mt-4 sm:mt-6 font-medium text-muted-foreground text-sm sm:text-base">Frequently Asked Questions about MCP Server</p>
         </div>
-        <div className="mx-auto mt-14 grid gap-8 md:grid-cols-2 md:gap-12">
+        <div className="mx-auto mt-8 sm:mt-14 grid gap-6 sm:gap-8 md:grid-cols-2 md:gap-12">
           {faqs.map((faq) => (
-            <div key={faq.id} className="flex gap-4">
-              <span className="flex size-6 shrink-0 items-center justify-center rounded-sm border border-primary font-mono text-xs text-primary">
+            <div key={faq.id} className="flex gap-3 sm:gap-4">
+              <span className="flex size-5 sm:size-6 shrink-0 items-center justify-center rounded-sm border border-primary font-mono text-xs text-primary">
                 {faq.id}
               </span>
               <div>
                 <div className="mb-2 flex items-center justify-between">
-                  <h3 className="font-semibold">{faq.question}</h3>
+                  <h3 className="font-semibold text-sm sm:text-base">{faq.question}</h3>
                 </div>
-                <p className="text-md text-muted-foreground">{faq.answer}</p>
+                <p className="text-sm sm:text-md text-muted-foreground leading-relaxed">{faq.answer}</p>
               </div>
             </div>
           ))}
